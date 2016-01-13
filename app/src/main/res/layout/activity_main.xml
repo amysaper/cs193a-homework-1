@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:gravity="top|center"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.amysaper.tripideas.MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Where do you want to go?"
+        android:textColor="#278187"
+        android:textStyle="bold"
+        android:typeface="sans"
+        android:visibility="visible"
+        android:textSize="30dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <RadioGroup android:layout_width="match_parent" android:layout_height="wrap_content">
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/hawaiiradiobutton"
+            android:text="Hawaii"
+            android:onClick="takeMeThere"
+            android:enabled="true"
+            android:textStyle="italic" />
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/parisradiobutton"
+            android:text="Paris"
+            android:onClick="takeMeThere"
+            android:textStyle="italic" />
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/australiaradiobutton"
+            android:text="Australia"
+            android:onClick="takeMeThere"
+            android:textStyle="italic" />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/hongkongradiobutton"
+            android:text="Hong Kong"
+            android:onClick="takeMeThere"
+            android:textStyle="italic" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="The world is your oyster!"
+            android:id="@+id/caption"
+            android:layout_gravity="center_horizontal"
+            android:typeface="serif"
+            android:textColor="#b51313" />
+
+    </RadioGroup>
+
+
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/globe"
+        android:text="B3"
+        android:id="@+id/mainbutton"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"/>
+</LinearLayout>
